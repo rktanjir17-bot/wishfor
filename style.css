@@ -1,154 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
-
-:root {
-  --bg-cream: #fbf8f3;
-  --sage-green: #8da487;
-  --sage-soft: #e8eee6;
-  --warm-earth: #8c6d58;
-  --text-dark: #2c322b;
-}
-
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-cream);
-  color: var(--text-dark);
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  background-image: radial-gradient(#d8d0c5 0.75px, transparent 0.75px);
-  background-size: 16px 16px;
+    background-color: #f7f5f0;
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #2c2c2c;
+    margin: 0;
+    padding: 20px;
 }
 
 .hero-section {
-  text-align: center;
-  padding: 50px 20px 30px 20px;
-  background: linear-gradient(180deg, var(--sage-soft) 0%, var(--bg-cream) 100%);
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.hero-title h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
-  color: var(--text-dark);
-  margin: 0 0 10px 0;
+.hero-section h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
 }
 
-.hero-subtitle p {
-  font-size: 1.1rem;
-  color: var(--warm-earth);
-  max-width: 600px;
-  margin: 0 auto;
+.wish-form-box {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.wish-form-box label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.wish-form-box input, .wish-form-box textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
 }
 
 .action-bar {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 25px 0;
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .btn-primary {
-  background-color: var(--sage-green);
-  color: white;
-  border: none;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: 0 4px 12px rgba(141, 164, 135, 0.4);
+    background-color: #7d9672;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .btn-secondary {
-  background-color: white;
-  color: var(--text-dark);
-  border: 1px solid var(--sage-green);
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: 600;
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .magazine-viewport {
-  max-width: 900px;
-  margin: 20px auto 50px auto;
-  background: #ffffff;
-  padding: 35px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .magazine-cover-spread {
-  display: flex;
-  gap: 30px;
-  align-items: center;
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
 .cover-portrait {
-  position: relative;
-  flex: 1;
-  border: 1px solid #eee;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: relative;
+    flex: 1;
 }
 
 .cover-portrait img {
-  width: 100%;
-  height: 380px;
-  object-fit: cover;
-  display: block;
+    width: 100%;
+    max-width: 320px;
+    border-radius: 6px;
+    display: block;
 }
 
 .cover-title-overlay {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: #ffffff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
-  letter-spacing: 2px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .spread-details {
-  flex: 1;
-}
-
-.magazine-heading {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  margin: 0 0 5px 0;
-}
-
-.magazine-subhead {
-  color: #777;
-  margin: 0 0 15px 0;
-}
-
-.divider {
-  border: 0;
-  border-top: 1px solid #eee;
-  margin: 20px 0;
-}
-
-.editorial-quote-block {
-  background: var(--sage-soft);
-  padding: 20px;
-  border-left: 4px solid var(--sage-green);
-  border-radius: 4px;
+    flex: 1.2;
 }
 
 .quote-text {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.1rem;
-  margin: 0 0 10px 0;
-  color: var(--text-dark);
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #4a5568;
+    line-height: 1.6;
 }
 
 .quote-author {
-  font-size: 0.9rem;
-  color: var(--warm-earth);
-  margin: 0;
-  font-weight: 600;
+    font-weight: bold;
+    color: #7d9672;
+    text-align: right;
+    margin-top: 15px;
 }
