@@ -1,0 +1,7 @@
+wishfor_app
+test_magazine
+hello
+*.o
+data/
+uploads/*.jpg
+uploads/*.png

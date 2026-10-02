@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600&display=swap');
+body {
+    background-color: #f5ead9;
+    font-family: 'Poppins', sans-serif;
+    color: #3a2e26;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 3.2em;
+    color: #d4622a;
+    text-align: center;
+    margin-bottom: 5px;
+}
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 1.8em;
+    color: #8a5a3c;
+    background: #fff8ee;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 12px;
+    transform: rotate(-1deg);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.08);
+    margin-top: 25px;
+}
+input, textarea, select {
+    border: 2px solid #e0c9a6;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: 4px 0;
+    background: #fffdf9;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #d4622a;
+}
+button {
+    background-color: #d4622a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #b8501f;
+}
+hr {
+    border: none;
+    border-top: 2px dashed #d9b98a;
+    margin: 25px 0;
+}
+.magazine {
+    background: #fffdf9;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 3px 4px 10px rgba(0,0,0,0.1);
+}
+.block {
+    background: #fff8ee;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 12px 0;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.06);
+}
+.message-block { border-left: 4px solid #6fa89c; }
+.wish-block { border-left: 4px solid #d4622a; }
+.memory-block, .gallery-block { border-left: 4px solid #c98fb0; }
+.memory-block img, .gallery-block img {
+    background: #ffffff;
+    padding: 10px 10px 30px 10px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    transform: rotate(-3deg);
+}
+.gallery-block img:nth-child(2n) {
+    transform: rotate(3deg);
+}
+.gallery-block img:nth-child(3n) {
+    transform: rotate(-1deg);
+}
+.gallery-block {
+    text-align: center;
+}
